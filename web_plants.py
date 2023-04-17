@@ -37,9 +37,9 @@ def check_last_watered():
 @app.route("/sensor")
 def sense_status():
     status = water.get_status()
-    print("status: " + water.get_status()); # for testing
+    print("status: " + water.get_status());
     message = ""
-    if (status == 0): # probably will work with raspberry pi
+    if (status == 0):
         message = "Water me please!"
     else:
         message = "I'm a happy plant"

@@ -46,10 +46,10 @@ def get_status(pin = 8):
     GPIO.setup(pin, GPIO.IN) # set up the pin as input
 
     # For when connected to raspberry pi:
-    # return GPIO.input(pin) # returns status of pin
+    return GPIO.input(pin) # returns status of pin
 
     # For now: (because we don't have a sensor, pretend plant is always dry)
-    return GPIO.LOW
+    # return GPIO.LOW
 
 # initialize pin as output
 def init_output(pin):
